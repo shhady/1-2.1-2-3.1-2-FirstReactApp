@@ -23,4 +23,4 @@ class Exercise4 extends React.Component {
 }
 export default Exercise4;
 
-ReactDOM.render(<exercise3-2 />, document.querySelector("#root"));
+// ReactDOM.render(<exercise3-2 />, document.querySelector("#root"));
