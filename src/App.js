@@ -6,6 +6,7 @@ import Exercise2 from "./components/exercise2-2";
 import Exercise3 from "./components/exercise3-1";
 import Exercise4 from "./components/ex3.2/exercise3-2";
 import Exercise4_1 from "./components/buttons4-1";
+import Exercise4_2 from "./components/cards4-2";
 
 class App extends React.Component {
   constructor() {
@@ -17,7 +18,8 @@ class App extends React.Component {
       // <Exercise2 />
       // <Exercise3 />
       // <Exercise4 />
-      <Exercise4_1 />
+      // <Exercise4_1 />
+      <Exercise4_2 />
     );
   }
 }
