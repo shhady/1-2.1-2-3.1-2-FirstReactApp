@@ -13,7 +13,7 @@ class Exercise9_1 extends React.Component {
 
     render() {
       return (
-        <div>  {this.state.spinnershow && <Spinner />}
+        <div>  {this.state.spinnershow && <Spinner message="please wait for the picture to load"/>}
             <div>
               {this.state.isHidden && <img className="image"src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt=""/>}
             </div>

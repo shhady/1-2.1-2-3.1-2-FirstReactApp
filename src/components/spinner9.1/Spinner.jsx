@@ -2,7 +2,7 @@
 import React from "react";
 import './style1.css';
 
-const Spinner = ()=> {
+const Spinner = (props)=> {
     return (
         <div className ="spinner">
              <div className="loader">
@@ -11,7 +11,7 @@ const Spinner = ()=> {
                          <div class="ball"></div>
                          <div class="ball"></div>
                  </div>
-             <span>Loading...</span>
+             <span>{props.message}</span>
             </div>
         </div>
     )
