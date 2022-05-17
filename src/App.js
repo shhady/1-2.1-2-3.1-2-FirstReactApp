@@ -11,6 +11,7 @@ import Exercise6_1 from "./components/ex6.1/newCards6-1";
 import Exercise7_1 from "./components/increment7-1";
 import Exercise7_2 from "./components/hideSeek7-2";
 import Exercise7_3 from "./components/incAndDec7-3";
+import Exercise8_1 from "./components/lifeCycleMethods8-1";
 
 class App extends React.Component {
   constructor() {
@@ -27,7 +28,8 @@ class App extends React.Component {
       // <Exercise6_1 />
       // <Exercise7_1 />
       // <Exercise7_2 />
-      <Exercise7_3 />
+      // <Exercise7_3 />
+      <Exercise8_1 />
     );
   }
 }
