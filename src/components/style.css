@@ -1,0 +1,55 @@
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(229, 17, 52);
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+@keyframes slidein {
+    from {
+      margin-left: -100px;
+   
+    }
+  
+    to {
+      margin-left: 0px;
+     
+    }
+  }
+
+  #box1{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(229, 17, 52);
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+@keyframes slidein {
+    from {
+      margin-left: -300px;
+   
+    }
+  
+    to {
+      margin-left: 0px;
+     
+    }
+  }
+  #box2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(229, 17, 52);
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+@keyframes slidein {
+    from {
+      margin-left: -200px;
+   
+    }
+  
+    to {
+      margin-left: 0px;
+     
+    }
+  }

@@ -11,7 +11,7 @@ class Exercise8_1 extends React.Component {
                 this.setState({newfavoriteColor: "red"},()=>{
                     document.getElementById("newText").textContent = `The updated favorite color is  ${this.state.newfavoriteColor}`
                 })
-               
+
             },3000)
         }
     
