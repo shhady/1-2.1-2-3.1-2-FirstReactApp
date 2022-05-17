@@ -13,6 +13,7 @@ import Exercise7_2 from "./components/hideSeek7-2";
 import Exercise7_3 from "./components/incAndDec7-3";
 import Exercise8_1 from "./components/lifeCycleMethods8-1";
 import Exercise8_2 from "./components/boxAnimation8-2";
+import Exercise8_3 from "./components/changingBox8-3";
 
 class App extends React.Component {
   constructor() {
@@ -32,6 +33,7 @@ class App extends React.Component {
       // <Exercise7_3 />
       // <Exercise8_1 />
       <Exercise8_2 />
+      // <Exercise8_3 />
     );
   }
 }
