@@ -14,7 +14,7 @@ import Exercise7_3 from "./components/incAndDec7-3";
 import Exercise8_1 from "./components/lifeCycleMethods8-1";
 import Exercise8_2 from "./components/boxAnimation8-2";
 import Exercise8_3 from "./components/changingBox8-3";
-import Exercise9_1 from "./components/spinner9-1";
+import Exercise9_1 from "./components/spinner9.1/spinner9-1";
 
 class App extends React.Component {
   constructor() {
