@@ -12,7 +12,6 @@ class Exercise8_3 extends React.Component {
         }
         componentDidUpdate(){
           setTimeout(() =>{
-              
                 this.setState({backgroundColor:this.generateRGBColor(), count: this.state.count + 1})
               if(this.state.count === 5){
                 this.setState({borderRadius: "50%"})
