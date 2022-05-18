@@ -16,6 +16,7 @@ import Exercise8_2 from "./components/boxAnimation8-2";
 import Exercise8_3 from "./components/changingBox8-3";
 import Exercise9_1 from "./components/spinner9.1/spinner9-1";
 import Exercise11_1 from "./components/childToFather11.1/childToFather11-1";
+import Exercise11_2 from "./components/checkbox11-2";
 
 class App extends React.Component {
   constructor() {
@@ -37,7 +38,8 @@ class App extends React.Component {
       // <Exercise8_2 />
       // <Exercise8_3 />
       // <Exercise9_1 />
-      <Exercise11_1 />
+      // <Exercise11_1 />
+      <Exercise11_2 />
     );
   }
 }
