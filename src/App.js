@@ -1,5 +1,4 @@
 import "./App.css";
-// import logo from "./components/logo.svg";
 import React from "react";
 import Exercise1 from "./components/Exercise2-1";
 import Exercise2 from "./components/exercise2-2";

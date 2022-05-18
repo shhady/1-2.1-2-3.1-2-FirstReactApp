@@ -5,13 +5,12 @@ import React from "react";
 class Exercise11_3 extends React.Component {
    state = {FirstName: "", LastName: "", Age: "", freeText: "", display: false, formDisplay: true , submit:"form submitted", submitShow: false}
 
-    onFormSubmit(event) {
+    onFormSubmit = (event) => {
         event.preventDefault();
     }
     render() {
       return (
         <div>
-            
        <div style={{marginTop: '2rem'}}>
        {this.state.formDisplay && 
             <form onSubmit={this.onFormSubmit} style= {{display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center', alignItems:'center'}}>
@@ -28,7 +27,7 @@ class Exercise11_3 extends React.Component {
                 </div> 
                 <div><label> Free Text: </label> <input type="text" value={this.state.freeText} onChange={e=>this.setState({freeText: e.target.value})}></input></div> 
                 <div >
-            <button onClick={e => this.setState({display: !this.state.display, formDisplay: !this.state.formDisplay})}>Continue</button>
+            <button onClick={e => this.setState({display: !this.state.display, formDisplay: !this.state.formDisplay, submitShow:this.state.submitShow})}>Continue</button>
             </div>
             </form>
     }
