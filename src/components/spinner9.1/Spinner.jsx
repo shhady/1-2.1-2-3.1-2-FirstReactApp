@@ -15,6 +15,11 @@ const Spinner = (props)=> {
             </div>
         </div>
     )
+};
+
+// incase we forget to pass message from the render file
+Spinner.defaultProps = {
+    message: "loading..."
 }
 
 export default Spinner;
