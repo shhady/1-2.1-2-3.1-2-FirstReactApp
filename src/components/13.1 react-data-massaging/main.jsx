@@ -1,4 +1,3 @@
-import { toHaveStyle } from '@testing-library/jest-dom/dist/matchers';
 import React from 'react';
 
 
@@ -82,7 +81,7 @@ class Exercise13_1 extends React.Component {
              <button onClick={this.olderThan}>showme</button>
              <div>{this.state.names}</div>
              <button onClick={this.olderThan}>show me full Object</button>
-                <div>{this.state.olderThan90}</div>
+            <div>{this.state.olderThan90}</div>
         </div>
       
       );
