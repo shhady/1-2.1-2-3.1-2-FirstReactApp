@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios"
 
-const categoryName = ["animal", "career", "celebrity", "dev", "explicit", "fashion", "food", "history", "money", "movie", "music", "political", "religion", "science", "sport", "travel"]
+ 
 
 class Exercise12_1 extends React.Component {
-  state = { randomJoke: "", getRandomJokeByCategory: "" , typedCat: ""}
+  state = { randomJoke: "", getRandomJokeByCategory: "" , typedCat: "", categories : ["animal", "career", "celebrity", "dev", "explicit", "fashion", "food", "history", "money", "movie", "music", "political", "religion", "science", "sport", "travel"]}
   getRandomJoke = async () => {
     const response = await axios.get('https://api.chucknorris.io/jokes/random', {
     })
@@ -39,7 +39,7 @@ class Exercise12_1 extends React.Component {
         </div>
         <div className="buttons">
         {/* loop to make all of them at once */}
-        <button onClick={this.getRandomJokeByCategory}>animal</button>
+        {/* <button onClick={this.getRandomJokeByCategory}>animal</button>
           <button onClick={this.getRandomJokeByCategory}>career</button>
           <button onClick={this.getRandomJokeByCategory}>celebrity</button>
           <button onClick={this.getRandomJokeByCategory}>dev</button>
@@ -54,7 +54,8 @@ class Exercise12_1 extends React.Component {
           <button onClick={this.getRandomJokeByCategory}>religion</button>
           <button onClick={this.getRandomJokeByCategory}>science</button>
           <button onClick={this.getRandomJokeByCategory}>sport</button>
-          <button onClick={this.getRandomJokeByCategory}>travel</button>
+          <button onClick={this.getRandomJokeByCategory}>travel</button> */}
+          {this.state.categories.map(category => {<button key={category} onClick={this.getRandomJokeByCategory}>{category}</button>})}
         </div>
         <div>
           <h1>{this.state.getRandomJokeByCategory}</h1>
@@ -70,3 +71,16 @@ class Exercise12_1 extends React.Component {
 }
 export default Exercise12_1;
 
+
+
+// {this.state.categories.map((category) => {
+//   return (
+//     <button
+//       onClick={() => {
+//         this.getRandomJokeByCategory(category);
+//       }}
+//     >
+//       {category}
+//     </button>
+//   );
+// })}
