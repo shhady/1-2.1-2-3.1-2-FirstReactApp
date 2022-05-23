@@ -20,6 +20,7 @@ import Exercise11_3 from "./components/formReview11-3";
 import Exercise12_1 from "./components/12-1 chuckNorris/12-1 chuckNorris";
 import Exercise13_1 from "./components/13.1 react-data-massaging/main";
 import Exercise13_2 from "./components/13.2 avatars/avatars";
+import Exercise14_1 from "./components/14.1 Focus/focus14-1";
 
 class App extends React.Component {
   constructor() {
@@ -46,7 +47,8 @@ class App extends React.Component {
       // <Exercise11_3 />
       // <Exercise12_1 />
       // <Exercise13_1 />
-      <Exercise13_2 />
+      // <Exercise13_2 />
+      <Exercise14_1 />
     );
   }
 }
