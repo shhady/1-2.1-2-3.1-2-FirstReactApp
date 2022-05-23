@@ -1,27 +1,39 @@
 import React from "react";
-import Buttons from "./display"
 
-const colors = ["red", "green", "yellow"]
+const colors = ["red", "green", "yellow"];
 
 class Exercise11_1 extends React.Component {
-    state = {favoriteColor : "blue"}
-   
-      handleClick = (event) => {
-        this.setState({favoriteColor: event.target.innerText})
-    }
-    
-        
-    render() {
-      return (
-        <div>
+  state = { favoriteColor: "blue" };
+
+  handleClick = (event) => {
+    this.setState({ favoriteColor: event.target.innerText });
+  };
+
+  render() {
+    return (
+      <div>
         {/* <Func /> */}
-        <button onClick={this.handleClick}  style={{ backgroundColor:colors[0] }}>{colors[0]}</button>
-        <button onClick={this.handleClick}  style={{ backgroundColor:colors[1] }}>{colors[1]}</button>
-        <button onClick={this.handleClick}  style={{ backgroundColor:colors[2] }}>{colors[2]}</button>
+        <button
+          onClick={this.handleClick}
+          style={{ backgroundColor: colors[0] }}
+        >
+          {colors[0]}
+        </button>
+        <button
+          onClick={this.handleClick}
+          style={{ backgroundColor: colors[1] }}
+        >
+          {colors[1]}
+        </button>
+        <button
+          onClick={this.handleClick}
+          style={{ backgroundColor: colors[2] }}
+        >
+          {colors[2]}
+        </button>
         <h1>My favorite color is: {this.state.favoriteColor}</h1>
-        </div>
-      );
-    }
+      </div>
+    );
   }
-  export default Exercise11_1;
-  
+}
+export default Exercise11_1;

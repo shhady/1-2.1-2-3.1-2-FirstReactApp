@@ -1,7 +1,4 @@
-import { render } from "@testing-library/react";
-import React, { createFactory } from "react";
-import ReactDOM from "react-dom";
-
+import React from "react";
 
 // class Exercise7_3 extends React.Component {
 //     constructor(props) {
@@ -12,23 +9,22 @@ import ReactDOM from "react-dom";
 //         this.setState({count: this.state.count + 1})
 //       };
 //       handleCount1 = () => {
-          
+
 //         this.setState({count: this.state.count - 1})
 //       };
 
 //       changeDisplay = () =>{
-          
+
 //         if(this.state.count > 0){
-//             this.setState({ color : "green" }); 
+//             this.setState({ color : "green" });
 //         }
 //         else if(this.state.count === 0){
 //             this.setState({ color : "black" });
 //         } else if(this.state.count < 0){
 //             this.setState({ color : "red" });
-//         } 
-      
-//     }
+//         }
 
+//     }
 
 //   render() {
 //     return (
@@ -41,12 +37,9 @@ import ReactDOM from "react-dom";
 //   }
 // }
 
-
-
 // import { render } from "@testing-library/react";
 // import React, { createFactory } from "react";
 // import ReactDOM from "react-dom";
-
 
 // class Exercise7_3 extends React.Component {
 //     constructor(props) {
@@ -68,8 +61,6 @@ import ReactDOM from "react-dom";
 //     this.setState({ val: this.state.val - 1, color: newColor });
 //   };
 
-
-
 //   render() {
 //     return (
 //       <div>
@@ -81,23 +72,21 @@ import ReactDOM from "react-dom";
 //   }
 // }
 
-
- class Ex7_3 extends React.Component {
-  state = { num: 0, labelColor: 'black' };
+class Ex7_3 extends React.Component {
+  state = { num: 0, labelColor: "black" };
 
   handleClick = ({ target: { id } }) => {
-   
     this.setState((prevState) => {
-      const bool = id === 'inc' ? prevState.num < 10 : prevState.num > -10;
-      const addNum = id === 'inc' ? 1 : -1;
+      const bool = id === "inc" ? prevState.num < 10 : prevState.num > -10;
+      const addNum = id === "inc" ? 1 : -1;
       return {
         num: bool ? prevState.num + addNum : prevState.num,
         labelColor:
           prevState.num + addNum === 0
-            ? 'black'
+            ? "black"
             : prevState.num + addNum > 0
-            ? 'green'
-            : 'red',
+            ? "green"
+            : "red",
       };
     });
   };
@@ -134,15 +123,13 @@ import ReactDOM from "react-dom";
   render() {
     return (
       <div>
-        <label
-          className={`myLabel ${this.state.labelColor}`}
-        >
+        <label className={`myLabel ${this.state.labelColor}`}>
           {this.state.num}
         </label>
-        <button id='inc' onClick={this.handleClick}>
+        <button id="inc" onClick={this.handleClick}>
           Increment
         </button>
-        <button id='dec' onClick={this.handleClick}>
+        <button id="dec" onClick={this.handleClick}>
           Decrement
         </button>
       </div>
