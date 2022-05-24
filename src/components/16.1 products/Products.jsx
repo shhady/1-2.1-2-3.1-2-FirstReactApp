@@ -20,6 +20,10 @@ class Products extends React.Component {
             </button>
           </Link>
         ))}
+
+        <Link to={"/products/"}>
+          <button>Back</button>
+        </Link>
       </div>
     );
   }
