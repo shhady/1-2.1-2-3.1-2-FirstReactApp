@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import React from "react";
 import Exercise1 from "./components/Exercise2-1";
 import Exercise2 from "./components/exercise2-2";
@@ -19,9 +19,10 @@ import Exercise11_2 from "./components/checkbox11-2";
 import Exercise11_3 from "./components/formReview11-3";
 import Exercise12_1 from "./components/12-1 chuckNorris/12-1 chuckNorris";
 import Exercise13_1 from "./components/13.1 react-data-massaging/main";
-import Exercise13_2 from "./components/13.2 avatars/avatars";
+// import Exercise13_2 from "./components/13.2 avatars";
 import Exercise14_1 from "./components/14.1 Focus/focus14-1";
 import Exercise14_2 from "./components/14.2 copy/copy14-2";
+import Exercise16_1 from "./components/16.1 products/main";
 
 class App extends React.Component {
   constructor() {
@@ -50,7 +51,8 @@ class App extends React.Component {
       // <Exercise13_1 />
       // <Exercise13_2 />
       // <Exercise14_1 />
-      <Exercise14_2 />
+      // <Exercise14_2 />
+      <Exercise16_1 />
     );
   }
 }
