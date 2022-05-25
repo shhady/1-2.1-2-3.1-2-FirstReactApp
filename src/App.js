@@ -25,6 +25,8 @@ import Exercise14_2 from "./components/14.2 copy/copy14-2";
 import Exercise16_1 from "./components/16.1 products/main";
 import Todo from "./components/toDO/ToDo";
 import MainApp from "./components/toDO/MainApp";
+import MainAPI from "./components/peopleAPI/main";
+
 class App extends React.Component {
   constructor() {
     super();
@@ -54,7 +56,8 @@ class App extends React.Component {
       // <Exercise14_1 />
       // <Exercise14_2 />
       // <Exercise16_1 />
-      <MainApp />
+      // <MainApp />
+      <MainAPI />
     );
   }
 }
