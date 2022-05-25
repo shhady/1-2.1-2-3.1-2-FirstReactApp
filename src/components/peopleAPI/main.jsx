@@ -38,10 +38,7 @@ class MainAPI extends React.Component {
       img: this.state.playerimage,
     };
     try {
-      const newPostedData = await axios.post(
-        "https://628e674e368687f3e71667e9.mockapi.io/team",
-        newPlayer
-      );
+      const newPostedData = await playersAPI.post("/", newPlayer);
       this.setState((prev) => {
         return {
           players: [...prev.players, newPostedData.data],
@@ -56,9 +53,7 @@ class MainAPI extends React.Component {
 
   handleDelete = async (id) => {
     try {
-      await axios.delete(
-        `https://628e674e368687f3e71667e9.mockapi.io/team/${id}`
-      );
+      await playersAPI.delete(`/${id}`);
       this.setState((prev) => {
         const newPlayersArr = prev.players.filter((p) => p.id !== id);
         return { players: newPlayersArr };
@@ -73,10 +68,7 @@ class MainAPI extends React.Component {
       (person) => person.id === id
     );
     const updatedPerson = { ...personToUpdate, name: newName };
-    const { data } = await axios.put(
-      `https://628e25fba339dfef87a87ada.mockapi.io/people/${id}`,
-      updatedPerson
-    );
+    const { data } = await playersAPI.put(`/${id}`, updatedPerson);
     this.setState((prev) => {
       return {
         players: prev.players.map((person) => {
