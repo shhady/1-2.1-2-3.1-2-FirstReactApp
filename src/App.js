@@ -26,6 +26,7 @@ import Exercise16_1 from "./components/16.1 products/main";
 import Todo from "./components/toDO/ToDo";
 import MainApp from "./components/toDO/MainApp";
 import MainAPI from "./components/peopleAPI/main";
+import Exercise18_1 from "./components/18.1 text/text18-1";
 
 class App extends React.Component {
   constructor() {
@@ -57,7 +58,8 @@ class App extends React.Component {
       // <Exercise14_2 />
       // <Exercise16_1 />
       // <MainApp />
-      <MainAPI />
+      // <MainAPI />
+      <Exercise18_1 />
     );
   }
 }
