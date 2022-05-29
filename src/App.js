@@ -61,8 +61,8 @@ class App extends React.Component {
       // <MainApp />
       // <MainAPI />
       // <Exercise18_1 />
-      // <Exercise18_2 />
-      <Exercise18_3 />
+      <Exercise18_2 />
+      // <Exercise18_3 />
     );
   }
 }
