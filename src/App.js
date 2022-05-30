@@ -29,6 +29,9 @@ import MainAPI from "./components/peopleAPI/main";
 import Exercise18_1 from "./components/18.1 text/text18-1";
 import Exercise18_2 from "./components/18.2 toDo-hooks/main";
 import Exercise18_3 from "./components/18.3 Time/time";
+import Exercise18_4 from "./components/18.4 check-delete/18_4checking";
+import Exercise19_1 from "./components/19.1 simple-fetch/19_1simple_fetch";
+
 class App extends React.Component {
   constructor() {
     super();
@@ -61,8 +64,10 @@ class App extends React.Component {
       // <MainApp />
       // <MainAPI />
       // <Exercise18_1 />
-      <Exercise18_2 />
+      // <Exercise18_2 />
       // <Exercise18_3 />
+      // <Exercise18_4 />
+      <Exercise19_1 />
     );
   }
 }
