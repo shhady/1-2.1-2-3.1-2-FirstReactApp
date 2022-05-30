@@ -31,6 +31,7 @@ import Exercise18_2 from "./components/18.2 toDo-hooks/main";
 import Exercise18_3 from "./components/18.3 Time/time";
 import Exercise18_4 from "./components/18.4 check-delete/18_4checking";
 import Exercise19_1 from "./components/19.1 simple-fetch/19_1simple_fetch";
+import Exercise19_2 from "./components/19.2 countries/19_2countries";
 
 class App extends React.Component {
   constructor() {
@@ -67,7 +68,8 @@ class App extends React.Component {
       // <Exercise18_2 />
       // <Exercise18_3 />
       // <Exercise18_4 />
-      <Exercise19_1 />
+      // <Exercise19_1 />
+      <Exercise19_2 />
     );
   }
 }
