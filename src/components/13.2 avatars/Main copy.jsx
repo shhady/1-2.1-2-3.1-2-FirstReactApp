@@ -4,7 +4,7 @@ import Avatar from "./Avatar";
 import Input from "./Input";
 import MappingAvatars from "./MappingAvatars";
 //https://randomuser.me/api/?results=10
-export default class Exercise14_2 extends Component {
+export default class Exercise13_2 extends Component {
   state = { avatarsArr: [], userInput: "" };
 
   //? 1) constructor create reactElement

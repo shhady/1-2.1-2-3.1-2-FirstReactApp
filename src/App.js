@@ -19,7 +19,7 @@ import Exercise11_2 from "./components/checkbox11-2";
 import Exercise11_3 from "./components/formReview11-3";
 import Exercise12_1 from "./components/12-1 chuckNorris/12-1 chuckNorris";
 import Exercise13_1 from "./components/13.1 react-data-massaging/main";
-// import Exercise13_2 from "./components/13.2 avatars";
+import Exercise13_2 from "./components/13.2 avatars/Main copy";
 import Exercise14_1 from "./components/14.1 Focus/focus14-1";
 import Exercise14_2 from "./components/14.2 copy/copy14-2";
 import Exercise16_1 from "./components/16.1 products/main";
@@ -33,6 +33,7 @@ import Exercise18_4 from "./components/18.4 check-delete/18_4checking";
 import Exercise19_1 from "./components/19.1 simple-fetch/19_1simple_fetch";
 import Exercise19_2 from "./components/19.2 countries/19_2countries";
 import Exercise19_3 from "./components/19.3 algolia/19_3Algolia";
+import Exercise19_4 from "./components/19.4 avatars/19_4avatars";
 
 class App extends React.Component {
   constructor() {
@@ -71,7 +72,8 @@ class App extends React.Component {
       // <Exercise18_4 />
       // <Exercise19_1 />
       // <Exercise19_2 />
-      <Exercise19_3 />
+      // <Exercise19_3 />
+      <Exercise19_4 />
     );
   }
 }

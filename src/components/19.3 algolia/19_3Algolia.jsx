@@ -12,7 +12,7 @@ const Exercise19_3 = () => {
   };
   const handleClick = () => {
     setTerm(input);
-    setIsLoading(true);
+    setIsLoading(false);
   };
 
   useEffect(() => {
