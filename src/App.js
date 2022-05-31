@@ -23,6 +23,7 @@ import Exercise13_2 from "./components/13.2 avatars/Main copy";
 import Exercise14_1 from "./components/14.1 Focus/focus14-1";
 import Exercise14_2 from "./components/14.2 copy/copy14-2";
 import Exercise16_1 from "./components/16.1 products/main";
+// @ts-ignore
 import Todo from "./components/toDO/ToDo";
 import MainApp from "./components/toDO/MainApp";
 import MainAPI from "./components/peopleAPI/main";
@@ -34,6 +35,7 @@ import Exercise19_1 from "./components/19.1 simple-fetch/19_1simple_fetch";
 import Exercise19_2 from "./components/19.2 countries/19_2countries";
 import Exercise19_3 from "./components/19.3 algolia/19_3Algolia";
 import Exercise19_4 from "./components/19.4 avatars/19_4avatars";
+import Exercise20_1 from "./components/20.1 cancel request/20_1cancelRequest";
 
 class App extends React.Component {
   constructor() {
@@ -73,7 +75,8 @@ class App extends React.Component {
       // <Exercise19_1 />
       // <Exercise19_2 />
       // <Exercise19_3 />
-      <Exercise19_4 />
+      // <Exercise19_4 />
+      <Exercise20_1 />
     );
   }
 }
