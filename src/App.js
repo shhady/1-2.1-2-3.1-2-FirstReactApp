@@ -38,6 +38,7 @@ import Exercise19_4 from "./components/19.4 avatars/19_4avatars";
 import Exercise20_1 from "./components/20.1 cancel request/20_1cancelRequest";
 import Exercise21_1 from "components/21.1 edit/21_1Edit";
 import Exercise21_2 from "components/21.2 pause-play/21_2PausePlay";
+import Exercise21_3 from "components/21.3 image toggle/21_3imgToggle";
 
 class App extends React.Component {
   constructor() {
@@ -80,7 +81,8 @@ class App extends React.Component {
       // <Exercise19_4 />
       // <Exercise20_1 />
       // <Exercise21_1 />
-      <Exercise21_2 />
+      // <Exercise21_2 />
+      <Exercise21_3 />
     );
   }
 }
