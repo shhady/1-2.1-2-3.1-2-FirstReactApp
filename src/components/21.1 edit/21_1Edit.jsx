@@ -10,6 +10,7 @@ const Exercise21_1 = () => {
   }
   useEffect(() => {
     if (input) {
+      // @ts-ignore
       inputRef.current.focus();
     }
   }, [input]);
